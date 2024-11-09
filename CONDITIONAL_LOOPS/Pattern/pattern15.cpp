@@ -1,7 +1,7 @@
 /*
-A B C
-A B C
-A B C
+A
+B C
+D E F
 
  */
 #include<iostream>
@@ -11,13 +11,18 @@ int row;
 cout<<"Enter number of rows"<<endl;
 cin>>row;
 int i=1;
+ char ch=65;
 while(i<=row){
   int j=1;
-  while(j<=row){
-  char ch ='A'+i+j-2;
+ 
+    while(j<=i){
+   
     cout<<ch;
     j++;
+     ch++;
   }
+
+
   cout<<endl;
 i++;
 }

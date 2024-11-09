@@ -1,7 +1,7 @@
 /*
-A B C
-A B C
-A B C
+A
+B B
+C C C
 
  */
 #include<iostream>
@@ -13,11 +13,14 @@ cin>>row;
 int i=1;
 while(i<=row){
   int j=1;
-  while(j<=row){
-  char ch ='A'+i+j-2;
+  
+  while(j<=i){
+   char ch= 64+i;
     cout<<ch;
     j++;
+   
   }
+  
   cout<<endl;
 i++;
 }
